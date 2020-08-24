@@ -147,6 +147,11 @@
 .current::after {
   position: absolute;
 
+  @media screen and (min-width: 480px) {
+bottom: -40%;
+  }
+  
+
   content: "";
   width: 100%;
   height: 4px;
