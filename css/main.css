@@ -698,6 +698,7 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
+  outline: 1px solid black;
   background-color: #fff;
   display: none;
 }
