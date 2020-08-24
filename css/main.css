@@ -698,8 +698,8 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  outline: 1px solid black;
   background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   display: none;
 }
 
@@ -719,17 +719,26 @@ img {
   display: block;
 }
 
-.burger-close {
+.menu-button .burger-close {
   display: none;
 }
 
-.burger-close.is-open {
+.menu-button.is-open .burger-menu {
+  display: none;
+}
+
+.menu-button.is-open .burger-close {
   display: block;
+  fill: #2196F3;
 }
 
 .menu-button {
   border: none;
   background-color: transparent;
+}
+
+.menu-button:hover {
+  fill: #2196F3;
 }
 
 @media screen and (min-width: 768px) {
