@@ -24,8 +24,24 @@
   height: 70px;
 }
 .advantages-icon-div {
-  height: 120px;
-
+  background: #F5F4FA;
+  border-radius: 4px;
+  /*центрирование иконки*/
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.advantages-list {
+        @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        }
+}
+.advantages-list-item {
         @media screen and (min-width: 480px) {
         width: 450px;
         }
@@ -35,22 +51,15 @@
         @media screen and (min-width: 1200px) {
         width: 270px;
         }
+  
+  margin-bottom: 30px;
 
-  background: #F5F4FA;
-  border-radius: 4px;
-  /*центрирование иконки*/
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-.advantages-list {
-        @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
+        @media screen and (min-width: 768px) {
+        width: 354px;
+        &:nth-child(2n+1) {
+        margin-right: 30px;
         }
 }
-.advantages-list-item {
-  margin-bottom: 30px;
 }
 .advantages-list-item:not(:last-child) {
         @media screen and (min-width: 1200px) {

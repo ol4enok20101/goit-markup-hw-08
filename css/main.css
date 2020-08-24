@@ -440,7 +440,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    background-color: darkcyan;
+    background-color: lightseagreen;
     width: 768px;
   }
 }
@@ -964,7 +964,6 @@ img {
 }
 
 .advantages-icon-div {
-  height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
   /*центрирование иконки*/
@@ -973,21 +972,10 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 480px) {
-  .advantages-icon-div {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .advantages-icon-div {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-icon-div {
-    width: 270px;
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -1000,6 +988,33 @@ img {
 
 .advantages-list-item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages-list-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list-item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list-item {
+    width: 354px;
+  }
+  .advantages-list-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1020,8 +1035,13 @@ img {
 /*Наша команда*/
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 107px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team .container {
+    padding-top: 94px;
+    padding-bottom: 107px;
+  }
 }
 
 .team .section-title {
@@ -1036,19 +1056,80 @@ img {
 
 .team-members-list {
   display: flex;
-  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .team-members-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-members-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-members-list {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .team-member {
-  border: 1px solid #eeeeee;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   overflow: hidden;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+.team-member:not(last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-member:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-member-image {
+    width: 450px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-member-image {
+    width: 354px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member-image {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team-card-content {
   background-color: #ffffff;
+}
+
+.team-member-name {
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-member-name {
@@ -1071,8 +1152,14 @@ img {
 
 .team-member-social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 17px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member-social-links {
+    justify-content: space-around;
+  }
 }
 
 .team-member-social-links-item {
@@ -1107,14 +1194,5 @@ img {
 .team-member-social-link:hover .team-member-social-link-icon,
 .team-member-social-link:focus .team-member-social-link-icon {
   fill: #ffffff;
-}
-
-.team-member:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-member-name {
-  padding-top: 30px;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
