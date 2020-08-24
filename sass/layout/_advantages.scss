@@ -1,0 +1,66 @@
+/*Преимущества*/
+.advantages .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.advantage-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.advantage-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $description-text-color;
+}
+.advantage-link-icon {
+  /*не трогаем, размер иконки*/
+  width: 70px;
+  height: 70px;
+}
+.advantages-icon-div {
+  height: 120px;
+
+        @media screen and (min-width: 480px) {
+        width: 450px;
+        }
+        @media screen and (min-width: 768px) {
+        width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+        width: 270px;
+        }
+
+  background: #F5F4FA;
+  border-radius: 4px;
+  /*центрирование иконки*/
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.advantages-list {
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        }
+}
+.advantages-list-item {
+  margin-bottom: 30px;
+}
+.advantages-list-item:not(:last-child) {
+        @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        }
+}
+.advantage-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.link-icon {
+  fill: #2f303a;
+}

@@ -1,0 +1,39 @@
+/*Бургер-меню для мобильного*/
+.menu-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: #fff;
+  display: none;
+
+        @media screen and (min-width: 768px) {
+        display: none;
+        }
+        @media screen and (min-width: 1200px) {
+        display: none;
+        }
+
+  &.is-open {
+  display: block;
+  }
+}
+.burger-close {
+  display: none;
+
+  &.is-open {
+  display: block;
+  }
+}
+.menu-button {
+  border: none;
+  background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        }
+    @media screen and (min-width: 1200px) {
+        display: none;
+        }
+}
