@@ -1102,6 +1102,65 @@ img {
   fill: #2f303a;
 }
 
+/*Чем мы занимаемся*/
+.activities .container {
+  padding-top: 0;
+  padding-bottom: 67px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.activities-list {
+  display: flex;
+  justify-content: center;
+}
+
+.activities-list-item {
+  position: relative;
+}
+
+.activities-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activities-list-item-name {
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 1.14;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .activities {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .activities {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .activities {
+    display: block;
+  }
+}
+
 /*Наша команда*/
 .team {
   background-color: #f5f4fa;
@@ -1110,7 +1169,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team .container {
     padding-top: 94px;
-    padding-bottom: 107px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1264,5 +1323,100 @@ img {
 .team-member-social-link:hover .team-member-social-link-icon,
 .team-member-social-link:focus .team-member-social-link-icon {
   fill: #ffffff;
+}
+
+/*Постоянные клиенты*/
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    justify-content: space-around;
+  }
+}
+
+.client-logo-svg {
+  fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-logo-link:hover .client-logo-svg,
+.client-logo-link:focus .client-logo-svg {
+  fill: #2196f3;
+}
+
+.clients-list-item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .clients-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    margin-right: 30px;
+  }
+  .clients-list-item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.client-logo-link {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .client-logo-link {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-logo-link {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-logo-link {
+    width: 170px;
+    height: 90px;
+  }
+}
+
+.client-logo-link:hover, .client-logo-link:focus {
+  border-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
