@@ -717,12 +717,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header .container {
-    display: flex;
-  }
-}
-
 .logo-studio-header {
   /*цвет слова Studio*/
   color: #000000;
@@ -786,8 +780,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .menu-wrapper {
-    display: flex;
-    flex-direction: row;
+    align-items: center;
+    /*почему не работает?*/
   }
 }
 
@@ -852,15 +846,22 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
   }
+  .navigation-list-item:last-child {
+    margin-right: 84px;
+  }
 }
 
-@media screen and (max-width: 767px) and (min-width: 1200px) {
-  .navigation-list-item {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .navigation-list-item:not(:last-child) {
     margin-right: 50px;
+  }
+  .navigation-list-item:last-child {
+    margin-right: 305px;
+    /*как сделать через флекс?*/
   }
 }
 
@@ -933,6 +934,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-address {
+    flex-direction: row;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mail-link-block {
     margin-bottom: 16px;
@@ -942,6 +949,12 @@ img {
 @media screen and (min-width: 768px) {
   .mail-link-block {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-link-block {
+    margin-right: 30px;
   }
 }
 
@@ -973,6 +986,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
+    /*центрирование иконки и ссылки*/
     align-items: center;
   }
 }

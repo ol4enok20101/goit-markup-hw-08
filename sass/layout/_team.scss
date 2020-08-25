@@ -4,7 +4,6 @@
 }
 .team .container {
 
-
         @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 107px;
@@ -22,7 +21,7 @@
 }
 .team-members-list {
   display: flex;
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
         flex-direction: column;
         align-items: center;
         }
