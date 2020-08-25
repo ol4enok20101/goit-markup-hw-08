@@ -1031,9 +1031,11 @@ img {
 }
 
 .advantage-link-icon {
-  /*не трогаем, размер иконки*/
+  /*размер иконки*/
   width: 70px;
   height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .advantages-icon-div {
@@ -1045,31 +1047,10 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .advantages-icon-div {
-    width: 450px;
-    height: 120px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-icon-div {
-    width: 354px;
-    height: 120px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-icon-div {
-    width: 270px;
-    height: 120px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .advantages-list {
+    display: flex;
     flex-direction: row;
-    /*почему не работает???*/
     flex-wrap: wrap;
   }
 }
@@ -1085,7 +1066,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480) {
   .advantages-list-item {
     width: 450px;
   }
