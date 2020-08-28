@@ -699,11 +699,11 @@ img {
 
 .header .container {
   position: relative;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
   .header .container {
-    display: flex;
     /*позиционирование логотипа и кнопки бургер-меню*/
     align-items: center;
     justify-content: space-between;
@@ -712,8 +712,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .header .container {
-    display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
+    height: 80px;
+    align-items: center;
   }
 }
 
@@ -780,8 +786,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .menu-wrapper {
-    align-items: center;
-    /*почему не работает?*/
+    height: 81px;
+    align-items: baseline;
   }
 }
 
@@ -907,13 +913,24 @@ img {
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
-  bottom: 0;
   display: block;
 }
 
 @media screen and (max-width: 767px) {
   .navigation-list-item .current::after {
     bottom: -40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list-item .current::after {
+    bottom: -195%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list-item .current::after {
+    bottom: 0;
   }
 }
 
