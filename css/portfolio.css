@@ -1033,11 +1033,55 @@ img {
 
 .footer .container {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
 }
 
-.company-address {
+@media screen and (max-width: 767px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer-contacts {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-contacts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.company-address,
+.company-mail-footer,
+.company-phone-footer {
   display: block;
   margin-bottom: 9px;
   font-weight: 500;
@@ -1045,19 +1089,15 @@ img {
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.company-address {
   color: #ffffff;
 }
 
 .company-mail-footer,
 .company-phone-footer {
-  font-weight: 500;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #757575;
-  display: block;
-  margin-bottom: 9px;
 }
 
 .join,
@@ -1072,6 +1112,14 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1199px) {
+  .join,
+  .subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .logo-link-footer {
   /*логотип в футере*/
   font-family: "Raleway", sans-serif;
@@ -1084,14 +1132,46 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-link-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-link-footer {
+    margin-left: 0;
+  }
+}
+
 .logo-studio-footer {
   /*белый цвет для слова studio*/
   color: #ffffff;
 }
 
+.footer-join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-right: 74px;
+  }
+}
+
 .join-links-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-links-list {
+    justify-content: space-between;
+  }
 }
 
 .join-logo-link {
@@ -1114,6 +1194,47 @@ img {
   width: 44px;
   height: 44px;
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    margin: 0 auto;
+  }
+}
+
+.subscribe {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.subscribe-block {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.subscribe-input {
+  margin-bottom: 20px;
 }
 
 .subscribe-button {

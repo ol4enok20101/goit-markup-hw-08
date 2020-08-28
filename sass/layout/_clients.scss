@@ -1,5 +1,5 @@
 /*Постоянные клиенты*/
-.clients .container {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -24,9 +24,9 @@
 }
 }
 .clients-list-item {
-  margin-bottom: 30px;
-
-        @media screen and (min-width: 480px) {
+  
+        @media screen and (max-width: 767px) {
+         margin-bottom: 30px;
   &:nth-last-child(-n + 2) {
   margin-bottom: 0;
   }
