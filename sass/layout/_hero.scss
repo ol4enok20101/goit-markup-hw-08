@@ -17,11 +17,9 @@
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: url(../../images/background/mobile-background@2x.jpg);
-  }
 }
 }
-
-
+}
 /*КАРТИНКА ДЛЯ ПЛАНШЕТА*/
 @media screen and (min-width: 768px) {
   .hero {
@@ -31,10 +29,6 @@
       rgba(47, 48, 58, 0.8)
     ), url(../../images/background/tablet-background.jpg);
   min-height: 400px;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // text-align: center;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -45,7 +39,6 @@
 }
 }
 }
-
 /*КАРТИНКА ДЛЯ ДЕСКТОПА*/
 @media screen and (min-width: 1200px) {
   .hero {
@@ -55,10 +48,6 @@
       rgba(47, 48, 58, 0.8)
     ), url(../../images/background/desktop-background.jpg);
   min-height: 600px;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // text-align: center;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
@@ -69,21 +58,16 @@
 }
 }
 }
-
-
-
-
-
-
-
 .hero {
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 118px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 199px;
   }
-
 }
 .hero-title {
   font-weight: 900;
@@ -92,16 +76,14 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: $accent-text;
+
+  margin-bottom: 30px;
 
         @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 60px;
-
-        margin-bottom: 30px;
         }
-
 }
 .button {
   font-weight: 700;

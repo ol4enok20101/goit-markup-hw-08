@@ -1065,6 +1065,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 118px;
@@ -1085,13 +1091,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
     line-height: 60px;
-    margin-bottom: 30px;
   }
 }
 
