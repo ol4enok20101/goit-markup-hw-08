@@ -426,12 +426,10 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: orange;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    background-color: palevioletred;
     margin-left: auto;
     margin-right: auto;
     width: 480px;
@@ -440,14 +438,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    background-color: powderblue;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    background-color: aquamarine;
     width: 1200px;
   }
 }
@@ -1025,28 +1021,48 @@ img {
 }
 
 /*Герой*/
-.hero {
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+.banner {
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/background/mobile-background.jpg);
+  min-height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner .banner {
     background-image: url("../../images/background/desktop-background@2x.jpg");
+    min-height: 600px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-width: 1200px) {
+  .banner {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 
-.hero .hero-title {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-width: 768px) {
+  .banner .banner {
+    background-image: url(../../images/background/tablet-background.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner .hero {
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner .hero {
+    padding-top: 199px;
+  }
+}
+
+.banner .hero-title {
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
@@ -1057,14 +1073,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .hero-title {
+  .banner .hero-title {
     font-size: 44px;
     line-height: 60px;
     margin-bottom: 30px;
   }
 }
 
-.hero .button {
+.banner .button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;

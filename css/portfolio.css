@@ -426,12 +426,10 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: orange;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    background-color: palevioletred;
     margin-left: auto;
     margin-right: auto;
     width: 480px;
@@ -440,14 +438,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    background-color: powderblue;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    background-color: aquamarine;
     width: 1200px;
   }
 }

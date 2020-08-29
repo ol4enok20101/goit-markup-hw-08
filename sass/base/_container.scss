@@ -3,20 +3,20 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: orange;
+//   background-color: orange;
 
     @media screen and (min-width: 480px) {
-        background-color: palevioletred;
+        // background-color: palevioletred;
         margin-left: auto;
         margin-right: auto;
         width: 480px;
         }
     @media screen and (min-width: 768px) {
-        background-color: powderblue;
+        // background-color: powderblue;
         width: 768px;
         }
     @media screen and (min-width: 1200px) {
-        background-color: aquamarine;
+        // background-color: aquamarine;
         width: 1200px;
         }
 }
