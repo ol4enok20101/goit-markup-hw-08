@@ -14,19 +14,14 @@
 }
 .modal {
   width: 100%;
-  height: 100%;
+  height: 609px;
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 1199px) {
         width: 450px;
-        height: 609px;
-        }
-        @media screen and (min-width: 768px) {
-        width: 450px;
-        height: 609px;
         }
         @media screen and (min-width: 1200px) {
         width: 528px;
@@ -149,7 +144,7 @@ display: hidden;
 }
 .contact-form-input {
   width: 100%;
-  height: 100%;
+  height: 40px;
 
   margin-bottom: 28px;
   padding-left: 42px;
@@ -160,18 +155,15 @@ display: hidden;
   border-radius: 4px;
         @media screen and (min-width: 480px) {
         width: 370px;
-        height: 40px;
         }
         @media screen and (min-width: 768px) {
         width: 370px;
-        height: 40px;
         }
         @media screen and (min-width: 1200px) {
         width: 448px;
-        height: 40px;
         }
 }
-.comment-label {  /*серый шрифт*/
+.comment-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -235,10 +227,10 @@ display: hidden;
   align-items: center;
   flex-direction: row-reverse;
 
-      @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 1.71;
-      }
+        @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        }
 }
 .checkbox-icon {
   box-sizing: border-box;
