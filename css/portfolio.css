@@ -448,6 +448,7 @@ img {
   }
 }
 
+/*модальное окно*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -1139,14 +1140,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio-example-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio-image {
     width: 450px;
     height: 294px;
@@ -1158,16 +1152,18 @@ img {
     width: 354px;
     height: 404px;
   }
-  .portfolio-image:nth-child(even) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-image {
     width: 370px;
     height: 294px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-example-list-item {
+    margin-bottom: 30px;
   }
 }
 
@@ -1185,9 +1181,28 @@ img {
 }
 
 .portfolio-card-link {
-  width: 370px;
-  height: 404px;
   display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-card-link {
+    width: 450px;
+    height: 404px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-card-link {
+    width: 354px;
+    height: 404px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-card-link {
+    width: 370px;
+    height: 404px;
+  }
 }
 
 .portfolio-card-link:hover, .portfolio-card-link:focus {
@@ -1258,7 +1273,7 @@ img {
   overflow: hidden;
 }
 
-/*Контакты*/
+/*Футер*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1306,10 +1321,8 @@ img {
 
 @media screen and (max-width: 1199px) {
   .footer-contacts-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -1437,7 +1450,6 @@ img {
 }
 
 .subscribe {
-  display: flex;
   margin-bottom: 20px;
 }
 
@@ -1462,13 +1474,16 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe-block {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.subscribe-input {
-  margin-bottom: 20px;
+@media screen and (max-width: 1199px) {
+  .subscribe-input {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe-button {

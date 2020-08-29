@@ -47,58 +47,61 @@
 }
 .portfolio-example-list {
   display: flex;
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-  align-items: center;
-  }
-   @media screen and (min-width: 768px) {
-       flex-wrap: wrap;
-   }
-  @media screen and (min-width: 1200px) {
-  flex-wrap: wrap;
-  justify-content: center;
-  }
-
+        @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        }
+        @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        }
 }
 .portfolio-image {
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 767px) {
         width: 450px;
-height: 294px;
-    }
+        height: 294px;
+        }
      @media screen and (min-width: 768px) {
          width: 354px;
 height: 404px;
-&:nth-child(even) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
+// &:nth-child(even) {
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+// }
      }
-    @media screen and (min-width: 1200px) {
-width: 370px;
-height: 294px;
-}
+        @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 294px;
+        }
 }
 .portfolio-example-list-item {
-@media screen and (min-width: 1200px) {
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-    &:nth-child(3n) {
-    margin-right: 0;
+        @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        margin-bottom: 30px;
+  &:nth-child(3n) {
+  margin-right: 0;
   }
-    &:nth-child(n + 7) {
-    margin-bottom: 0;
+  &:nth-child(n + 7) {
+  margin-bottom: 0;
   }
-    }
 }
-
-
+}
 .portfolio-card-link {
+  display: block;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+height: 404px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+height: 404px;
+  }
+  @media screen and (min-width: 1200px) {
   width: 370px;
   height: 404px;
-  display: block;
-
+  }
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px

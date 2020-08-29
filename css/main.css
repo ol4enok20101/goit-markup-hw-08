@@ -448,6 +448,7 @@ img {
   }
 }
 
+/*модальное окно*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -1587,7 +1588,7 @@ img {
   border-color: #2196f3;
 }
 
-/*Контакты*/
+/*Футер*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1635,10 +1636,8 @@ img {
 
 @media screen and (max-width: 1199px) {
   .footer-contacts-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -1766,7 +1765,6 @@ img {
 }
 
 .subscribe {
-  display: flex;
   margin-bottom: 20px;
 }
 
@@ -1791,13 +1789,16 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe-block {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.subscribe-input {
-  margin-bottom: 20px;
+@media screen and (max-width: 1199px) {
+  .subscribe-input {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe-button {

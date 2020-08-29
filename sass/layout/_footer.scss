@@ -1,13 +1,11 @@
-/*Контакты*/
+/*Футер*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   
   background-color: $background-dark-color;
-
 .container {
   display: flex;
-
         @media screen and (max-width: 767px) {
         flex-direction: column;
         }
@@ -35,10 +33,12 @@
 }
 .footer-contacts-list {
         @media screen and (max-width: 1199px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        margin-right: 0;
+        margin-left: 0;
         }
 }
 .company-address,
@@ -143,7 +143,6 @@
         }
 }
 .subscribe {
-  display: flex;
   margin-bottom: 20px;
 }
 .subscribe-block {
@@ -158,12 +157,15 @@
         align-items: center;
         }
         @media screen and (min-width: 1200px) {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         }
 }
 .subscribe-input {
+  @media screen and (max-width: 1199px) {
 margin-bottom: 20px;
+  }
 }
 .subscribe-button {
   font-weight: 700;
