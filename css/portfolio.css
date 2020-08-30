@@ -1141,28 +1141,14 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio-image {
-    width: 450px;
-    height: 294px;
+  .portfolio-example-list-item {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-image {
-    width: 354px;
-    height: 404px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-image {
-    width: 370px;
-    height: 294px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .portfolio-example-list-item {
+  .portfolio-example-list-item:nth-child(odd) {
+    margin-right: 30px;
     margin-bottom: 30px;
   }
 }
@@ -1182,13 +1168,6 @@ img {
 
 .portfolio-card-link {
   display: block;
-}
-
-@media screen and (min-width: 480px) {
-  .portfolio-card-link {
-    width: 450px;
-    height: 404px;
-  }
 }
 
 @media screen and (min-width: 768px) {
