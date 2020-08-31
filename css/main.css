@@ -458,7 +458,6 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
-  /*не работает*/
 }
 
 body.modal-open {
@@ -1397,7 +1396,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-member-image {
     width: 450px;
     height: 320px;
