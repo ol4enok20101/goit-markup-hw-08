@@ -12,7 +12,7 @@ refs.backdrop.addEventListener("click", logBackdropClick);
 function toggleModal() {
   refs.backdrop.classList.toggle("is-hidden");
 }
-
 function logBackdropClick() {
   console.log("Это клик в бекдроп");
+
 }
